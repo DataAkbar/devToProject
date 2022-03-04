@@ -1,0 +1,278 @@
+{% load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>DEVuz Community</title>
+    <meta name="last-updated" content="2022-02-16 16:14:06 UTC">
+    <meta name="user-signed-in" content="true">
+    <meta name="head-cached-at" content="1645028046">
+    <!-- Experimental web monetization payment pointer for micropayments -->
+    <!-- It lets readers make micropayments to websites they visit. -->
+    <!-- This is step 1: Get live in production to test for platform-wide payment pointer. -->
+    <!-- Step 2: Allow authors to set their payment pointer so they can directly monetize their content based on visitors. -->
+    <!-- Step 3: Enable further functionality based on what we learn from this experimentation and how the ecosystem evolves. -->
+    <meta name="monetization" content="$ilp.uphold.com/24HhrUGG7ekn">
+    <meta name="environment" content="production">
+    <link rel="stylesheet" media="all" href=" {% static 'assets/minimal-6ec2b7ee21e51ce03e691f048187fca8a1ae2be2314009461d92d278be3dc394.css' %} " id="main-minimal-stylesheet" />
+    <link rel="stylesheet" media="all" href=" {% static 'assets/views-eaf0654e9f16d9bdc91641f382b7a5b98c20be56364dd4ba97adfbe9c0fc6013.css' %} " id="main-views-stylesheet" />
+    <link rel="stylesheet" media="all" href=" {% static 'assets/crayons-457a630a04392323e561324c3e667954a7c89a7bdb5d5e540180c93db77084e8.css' %} " id="main-crayons-stylesheet" />
+    <script src=" {% static 'assets/base-908d576234c530135ba588c2cad971b02287c10bed663b4d3c14dcb52f0143c8.js' %} " defer="defer"></script>
+    <script src=" {% static 'packs/js/runtime~base-e03a8477b43b515bde55.js' %} " defer="defer"></script>
+    <script src=" {% static 'packs/js/base-d80c39d5493670048cd5.chunk.js' %} " defer="defer"></script>
+    <script src=" {% static 'packs/js/runtime~Search-5ddc35ceda437905f7e3.js' %} " defer="defer"></script>
+    <script src=" {% static 'packs/js/0-7ec231ef6c02020f66de.chunk.js' %} " defer="defer"></script>
+    <script src=" {% static 'packs/js/2-af64449252641953945f.chunk.js' %} " defer="defer"></script>
+    <script src=" {% static 'packs/js/Search-8ee193acd2a79544d0c4.chunk.js' %} " defer="defer"></script>
+    <script src=" {% static 'packs/js/runtime~runtimeBanner-e2dff09f3079da543354.js' %} " defer="defer"></script>
+    <script src=" {% static 'packs/js/1-c484bdb5c4ba85d0bb6a.chunk.js' %} " defer="defer"></script>
+    <script src=" {% static 'packs/js/runtimeBanner-36f4dd7afd7e9c8c48f7.chunk.js' %} " defer="defer"></script>
+    <script src=" {% static 'packs/js/runtime~onboardingRedirectCheck-4f40410af0165c89a1a3.js' %} " defer="defer"></script>
+    <script src=" {% static 'packs/js/onboardingRedirectCheck-8d89adf7d2ceb9b82680.chunk.js' %} " defer="defer"></script>
+    <script src=" {% static 'packs/js/runtime~contentDisplayPolicy-3cf1ed1c7b5919e0a55d.js' %} " defer="defer"></script>
+    <script src=" {% static 'packs/js/contentDisplayPolicy-6eb902e57d06431a8dd0.chunk.js' %} " defer="defer"></script>
+    <link rel="canonical" href="https://dev.to/" />
+    <meta name="description" content="A constructive and inclusive social network for software developers. With you every step of your journey.">
+    <meta name="keywords" content="software development, engineering, rails, javascript, ruby">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://dev.to/" />
+    <meta property="og:title" content="DEV Community" />
+    <meta property="og:image" content="https://thepracticaldev.s3.amazonaws.com/i/6hqmcjaxbgbon8ydw93z.png">
+    <meta property="og:description" content="A constructive and inclusive social network for software developers. With you every step of your journey." />
+    <meta property="og:site_name" content="DEV Community" />
+    <meta name="twitter:site" content="@thepracticaldev">
+    <meta name="twitter:title" content="DEV Community">
+    <meta name="twitter:description" content="A constructive and inclusive social network for software developers. With you every step of your journey.">
+    <meta name="twitter:image:src" content="https://thepracticaldev.s3.amazonaws.com/i/6hqmcjaxbgbon8ydw93z.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="alternate" type="application/rss+xml" title="DEV Community RSS Feed" href="https://dev.to/feed" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <link rel="shortcut icon" type="image/x-icon" href="https://res.cloudinary.com/practicaldev/image/fetch/s--E8ak4Hr1--/c_limit,f_auto,fl_progressive,q_auto,w_32/https://dev-to.s3.us-east-2.amazonaws.com/favicon.ico" />
+    <link rel="apple-touch-icon" href="https://res.cloudinary.com/practicaldev/image/fetch/s--gDM0_LTS--/c_limit,f_png,fl_progressive,q_80,w_180/https://practicaldev-herokuapp-com.freetls.fastly.net/assets/devlogo-pwa-512.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://res.cloudinary.com/practicaldev/image/fetch/s--l0c3Kmql--/c_limit,f_png,fl_progressive,q_80,w_152/https://practicaldev-herokuapp-com.freetls.fastly.net/assets/devlogo-pwa-512.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://res.cloudinary.com/practicaldev/image/fetch/s--gDM0_LTS--/c_limit,f_png,fl_progressive,q_80,w_180/https://practicaldev-herokuapp-com.freetls.fastly.net/assets/devlogo-pwa-512.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="https://res.cloudinary.com/practicaldev/image/fetch/s--2ecYCSjC--/c_limit,f_png,fl_progressive,q_80,w_167/https://practicaldev-herokuapp-com.freetls.fastly.net/assets/devlogo-pwa-512.png">
+    <link href="https://res.cloudinary.com/practicaldev/image/fetch/s--t7tVouP9--/c_limit,f_png,fl_progressive,q_80,w_192/https://practicaldev-herokuapp-com.freetls.fastly.net/assets/devlogo-pwa-512.png" rel="icon" sizes="192x192" />
+    <link href="https://res.cloudinary.com/practicaldev/image/fetch/s--lrmEcD2H--/c_limit,f_png,fl_progressive,q_80,w_128/https://practicaldev-herokuapp-com.freetls.fastly.net/assets/devlogo-pwa-512.png" rel="icon" sizes="128x128" />
+    <meta name="apple-mobile-web-app-title" content="dev.to">
+    <meta name="application-name" content="dev.to">
+    <meta name="theme-color" content="#000000" />
+    <link rel="search" href="https://dev.to/open-search.xml" type="application/opensearchdescription+xml" title="DEV Community" />
+    <meta property="forem:name" content="DEV Community" />
+    <meta property="forem:logo" content="{% static 'metalinkuchun.png' %}" />
+    <meta property="forem:domain" content="dev.to" />
+</head>
+
+<body class="sans-serif-article-body default-header" data-user-status="logged-in" data-community-name="DEV Community" data-locale="en" data-honeybadger-key="a45862f6" data-deployed-at="2022-02-16T15:45:58Z" data-latest-commit-id="ebbf039444d3fd07556da9ffd242183076a01a8e"
+    data-ga-tracking="UA-71991109-1">
+    <link rel="stylesheet" media="all" href=" {% static 'assets/minimal-6ec2b7ee21e51ce03e691f048187fca8a1ae2be2314009461d92d278be3dc394.css' %} " id="secondary-minimal-stylesheet" />
+    <link rel="stylesheet" media="all" href=" {% static 'assets/views-eaf0654e9f16d9bdc91641f382b7a5b98c20be56364dd4ba97adfbe9c0fc6013.css' %} " id="secondary-views-stylesheet" />
+    <link rel="stylesheet" media="all" href=" {% static 'assets/crayons-457a630a04392323e561324c3e667954a7c89a7bdb5d5e540180c93db77084e8.css' %} " id="secondary-crayons-stylesheet" />
+    <div id="body-styles">
+        <style>
+             :root {
+                --accent-brand-lighter-rgb: 80, 99, 301;
+                --accent-brand-rgb: 59, 73, 223;
+                --accent-brand-darker-rgb: 47, 58, 178;
+            }
+        </style>
+    </div>
+
+    <div id="audiocontent" data-podcast=""></div>
+    <div class="navigation-progress" id="navigation-progress"></div>
+    <header class="crayons-header print-hidden">
+        <span id="route-change-target" tabindex="-1"></span>
+        <a href="#main-content" class="skip-content-link">Skip to content</a>
+        <div class="crayons-header__container">
+            <span class="inline-block m:hidden ">
+        <button class="c-btn c-btn--icon-alone js-hamburger-trigger mx-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img"
+            aria-labelledby="a3bmizhk17evn6k8z005qkoheqmgeduk" class="crayons-icon">
+            <title id="a3bmizhk17evn6k8z005qkoheqmgeduk">Navigation menu</title>
+            <path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"></path>
+          </svg>
+        </button>
+      </span>
+            <a href="{% url 'index' %}">
+                <img class="site-logo__img" src="{% static 'logoDev.png' %}" alt="DEV Community">
+            </a>
+            <div class="crayons-header--search js-search-form" id="header-search">
+                <form accept-charset="UTF-8" method="get" action="/search" role="search">
+                    <div class="crayons-fields crayons-fields--horizontal">
+                        <div class="crayons-field flex-1 relative">
+                            <input class="crayons-header--search-input crayons-textfield js-search-input" type="text" id="nav-search" name="q" placeholder="Search..." autocomplete="off" />
+                            <button type="submit" aria-label="Search" class="c-btn c-btn--icon-alone absolute inset-px left-auto mt-0 py-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img"
+                  aria-labelledby="a8iv2cai05vj9jza5g3vebql8dsiu0q8" aria-hidden="true" class="crayons-icon">
+                  <title id="a8iv2cai05vj9jza5g3vebql8dsiu0q8">Search</title>
+                  <path
+                    d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0111 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 01-1.969 5.617zm-2.006-.742A6.977 6.977 0 0018 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 004.875-1.975l.15-.15z">
+                  </path>
+                </svg>
+              </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="flex items-center h-100 ml-auto">
+                <a class="c-link c-link--icon-alone c-link--block m:hidden " id="search-link" aria-label="Search" href="/search">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="akv2nzcw019y1celzrio4i5ti8h8y99f" class="crayons-icon">
+            <title id="akv2nzcw019y1celzrio4i5ti8h8y99f">Search</title>
+            <path
+              d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0111 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 01-1.969 5.617zm-2.006-.742A6.977 6.977 0 0018 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 004.875-1.975l.15-.15z">
+            </path>
+          </svg>
+                </a>
+                <span class="hidden m:flex ml-auto">
+          <a href="/new" class="c-cta c-cta--branded mr-2 whitespace-nowrap">Create Post</a>
+          <span class="trusted-visible-block">
+            <a id="moderation-link" class="c-link c-link--icon-alone c-link--block mx-1" aria-label="Moderation"
+              href="/mod">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img"
+                aria-labelledby="aowtekocmccldo50u970kai5f1oppld4" class="crayons-icon">
+                <title id="aowtekocmccldo50u970kai5f1oppld4">Moderation</title>
+                <path
+                  d="M3.783 2.826L12 1l8.217 1.826a1 1 0 01.783.976v9.987a6 6 0 01-2.672 4.992L12 23l-6.328-4.219A6 6 0 013 13.79V3.802a1 1 0 01.783-.976zM5 4.604v9.185a4 4 0 001.781 3.328L12 20.597l5.219-3.48A4 4 0 0019 13.79V4.604L12 3.05 5 4.604zM13 10h3l-5 7v-5H8l5-7v5z">
+                </path>
+              </svg>
+            </a>
+          </span>
+                </span>
+                <a href="/notifications" id="notifications-link" class="c-link c-link--icon-alone c-link--block mx-1" aria-label="Notifications">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="a6usppyrma83hoizvpn4vvjqg2cyeqmr" class="crayons-icon">
+            <title id="a6usppyrma83hoizvpn4vvjqg2cyeqmr">Notifications</title>
+            <path d="M20 17h2v2H2v-2h2v-7a8 8 0 1116 0v7zm-2 0v-7a6 6 0 10-12 0v7h12zm-9 4h6v2H9v-2z">
+            </path>
+          </svg>
+                    <span class="c-indicator c-indicator--danger hidden" id="notifications-number"></span>
+                </a>
+                <div class="crayons-header__menu mx-1" id="crayons-header__menu">
+                    <button type="button" class="c-btn c-btn--icon-alone radius-full p-1" id="member-menu-button" aria-label="Navigation menu" aria-expanded="false">
+            <span class="crayons-avatar crayons-avatar--l">
+              <img class="crayons-avatar__image" alt="" id="nav-profile-image" />
+            </span>
+          </button>
+                    <div class="crayons-dropdown left-2 right-2 s:left-auto crayons-header__menu__dropdown inline-block m:-mr-2 top-100">
+                        <ul class="m-0" id="crayons-header__menu__dropdown__list">
+                            <li id="user-profile-link-placeholder" class="border-0 border-b-1 border-solid border-base-20 pb-2 mb-2">
+                                <a href="#" id="first-nav-link" class="c-link c-link--default c-link--block lh-tight">
+                                    <div>
+                                        <span class="fw-medium block">...</span>
+                                        <small class="fs-s opacity-75"></small>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="js-header-menu-admin-link hidden">
+                                <a href="/admin" class="c-link c-link--block" data-no-instant>Admin</a>
+                            </li>
+                            <li>
+                                <a href="/dashboard" class="c-link c-link--block">Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="/mod" class="c-link c-link--block trusted-visible-block">Moderator Center</a>
+                            </li>
+                            <li>
+                                <a href="/new" class="c-link c-link--block">Create Post</a>
+                            </li>
+                            <li>
+                                <a href="/readinglist" class="c-link c-link--block">Reading list</a>
+                            </li>
+                            <li class="border-0 border-b-1 border-solid border-base-20 pb-2">
+                                <a href="/settings" class="c-link c-link--block" id="second-last-nav-link">Settings</a>
+                            </li>
+                            <li class="pt-2">
+                                <a href="/signout_confirm" class="c-link c-link--block" id="last-nav-link">Sign Out</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% comment %} <script>
+            // Here we have some scripts we want to get working on before
+            // waiting for the page to stream in.
+
+            // Load the current user's pic as quickly as it's available
+            var currentUser = localStorage.getItem('current_user')
+            var navProfilePic = document.getElementById('nav-profile-image')
+            if (currentUser && navProfilePic) {
+                navProfilePic.src = JSON.parse(currentUser).profile_image_90;
+            }
+
+            // Load notifications count as quickly as it's available.
+            // Not if we're on the notifications page itself
+            if (
+                window.location.pathname !== '/notifications'
+            ) {
+                var xmlhttp;
+
+                xmlhttp = new XMLHttpRequest();
+                xmlhttp.onreadystatechange = function() {
+                    if (xmlhttp.readyState == XMLHttpRequest.DONE) {
+                        var count = xmlhttp.response;
+                        if (isNaN(count)) {
+                            document
+                                .getElementById('notifications-number')
+                                .classList.add('hidden');
+                        } else if (count != '0' && count != undefined && count != '') {
+                            document.getElementById('notifications-number').innerHTML =
+                                xmlhttp.response;
+                            document
+                                .getElementById('notifications-number')
+                                .classList.remove('hidden');
+                        } else {
+                            document
+                                .getElementById('notifications-number')
+                                .classList.add('hidden');
+                        }
+                    }
+                };
+
+                xmlhttp.open('GET', '/notifications/counts', true);
+                xmlhttp.send();
+            }
+        </script> {% endcomment %}
+    </header>
+    {%block content%}
+
+    {%endblock content%} 
+    <footer class="crayons-footer print-hidden">
+        <div id="footer-container" class="crayons-footer__container">
+            <p class="fs-s crayons-footer__description">
+                <a class="c-link c-link--branded fw-medium" aria-label="DEV Community Home" href="/">DEV Community</a> — A constructive and inclusive social network for software developers. With you every step of your journey.
+            </p>
+            <div class="fs-s">
+                <p>
+                    Built on <a class="c-link c-link--branded" target="_blank" rel="noopener" href="https://www.forem.com">Forem</a> — the <a target="_blank" rel="noopener" class="c-link c-link--branded" href="https://dev.to/t/opensource">open source</a>                    software that powers <a target="_blank" rel="noopener" class="c-link c-link--branded" href="https://dev.to">DEV</a> and other inclusive communities.
+                </p>
+                <p>
+                    Made with love and <a target="_blank" rel="noopener" class="c-link c-link--branded" href="https://dev.to/t/rails">Ruby on Rails</a>. DEV Community <span title="copyright">&copy;</span> 2016 - 2022.
+                </p>
+            </div>
+            <a href="https://www.forem.com" target="_blank" rel="noopener" class="c-link c-link c-link--block c-link--icon-alone self-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" role="img" aria-labelledby="amtjbq3v7rc2pw4ou9qht67rm0s6kxqo" class="crayons-icon crayons-icon--default c-link__icon">
+          <title id="amtjbq3v7rc2pw4ou9qht67rm0s6kxqo">Forem logo</title>
+          <g clip-path="url(#clip0)" fill="#1AB3A6">
+            <path
+              d="M4.603 1.438a8.056 8.056 0 017.643 5.478 8.543 8.543 0 00-3.023 5.968H8.054C3.606 12.884 0 9.296 0 4.87V1.468a.03.03 0 01.03-.03h4.573zM23.97 6.515a.03.03 0 01.03.03v2.833c0 4.11-3.354 7.442-7.491 7.442h-2.881v5.726h-2.305V14.53l.022-1.145c.294-3.843 3.526-6.87 7.469-6.87h5.155z">
+            </path>
+          </g>
+          <defs>
+            <clipPath id="clip0">
+              <path fill="#fff" d="M0 0h24v24H0z">
+              </path>
+            </clipPath>
+          </defs>
+        </svg>
+            </a>
+        </div>
+    </footer>
+    <div id="snack-zone">
+    </div>
+    <div id="i18n-translations" data-translations="{&quot;en&quot;:{&quot;core&quot;:{&quot;add_comment&quot;:&quot;Add comment&quot;,&quot;beta&quot;:&quot;beta&quot;,&quot;comment&quot;:&quot;Comment&quot;,&quot;copy_link&quot;:&quot;Copy link&quot;,&quot;edit_profile&quot;:&quot;Edit profile&quot;,&quot;follow&quot;:&quot;Follow&quot;,&quot;follow_back&quot;:&quot;Follow back&quot;,&quot;following&quot;:&quot;Following&quot;,&quot;like&quot;:&quot;Like&quot;,&quot;loading&quot;:&quot;loading...&quot;,&quot;reaction&quot;:&quot;Reaction&quot;,&quot;report_abuse&quot;:&quot;Report abuse&quot;,&quot;search&quot;:&quot;Search&quot;}}}">
+    </div>
+</body>
+
+</html>          
