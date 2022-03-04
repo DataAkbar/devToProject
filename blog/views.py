@@ -30,19 +30,19 @@ def index(request):
 
 def detail(request, post_id):
     post = Blog.objects.get(pk=post_id)
-    form = CommentForm(request.POST)
+    # form = CommentForm(request.POST)
 
-    if form.is_valid():
-        new_comment = form.save(commit=False)
-        new_comment.author = request.user
-        new_comment.post = post
-        new_comment.save()
-    else:
-        form = CommentForm()
+    # if form.is_valid():
+    #     new_comment = form.save(commit=False)
+    #     new_comment.author = request.user
+    #     new_comment.post = post
+    #     new_comment.save()
+    # else:
+    #     form = CommentForm()
 
-    comments = Comment.objects.filter(post=post).order_by('-created_at')
+    # comments = Comment.objects.filter(post=post).order_by('-created_at')
 
-    return render(request, 'blog/detailBlog.html', context={'post': post, 'comments': comments, 'form': form})
+    return render(request, 'blog/detailBlog.html', context={'post': post}) # 'comments': comments, 'form': form})
 
 
 def category(request, slug):

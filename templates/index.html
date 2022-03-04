@@ -1038,7 +1038,8 @@
 
                 <div id="homepage-feed" style="min-height: 90vh">
                   <div id="rendered-article-feed">
-                    {% for post in posts%}
+                     {% comment %} 
+                    {% for post in posts %}
                       <div>
 
                         <div class="crayons-story crayons-story--featured" data-content-user-id="1">
@@ -1180,6 +1181,7 @@
 
                       </div>
                   {% endfor %}    
+                 {% endcomment %}
                   </div>
                 </div>
 
